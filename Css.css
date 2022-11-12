@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+*{
+    font-family: 'Righteous', cursive;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body{
+    background-color: black;
+}
+.GameContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 1em;
+}
+
+.boxescontainer{
+    width: 35em;
+    height: fit-content;
+margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2px 2px;
+    background-color: white;
+
+}
+.box{
+    z-index: 100;
+    width: 100%;
+   height: 10em;
+    background-color: black;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    transition: 0.2s all;
+}
+h1{
+    color: yellow;
+}
+span{
+    color: white;
+}
+.Playersinfo{
+    display: flex;
+margin-top: 50px;
+}
+.Playersinfo p , h6{
+    color: white;
+    margin: 0px 10px 0px 10px;
+}
+
+.player{
+    display: flex;
+    flex-direction: column;
+}
+h6{
+    text-align: center;
+    font-size: 1em;
+}
+@media(max-width:1023px){
+
+}
+@media (max-width:641px){
+    body{
+        font-size: 10px;
+     }
+}
+@media (max-width:300px){
+body{
+    font-size: 7px;
+}
+}
